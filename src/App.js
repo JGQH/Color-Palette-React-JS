@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Picker from './Picker';
+import Adder from './Adder';
 
 function getHex(val){
   if(val < 16){
@@ -41,7 +42,7 @@ const App = () => {
       {colors.map((color, index) => {
         return <Picker key={index} color={color} onClick={setBG}/>
       })}
-      <Picker color={"#ffffff"} onClick={addColor}/>
+      <Adder onClick={addColor}/>
     </div>
     </>
   );

@@ -14,21 +14,37 @@ body {
 }
 
 /* Picker */
-.picker-holder {
+.picker-holder, .adder-holder {
     text-align: center;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 10px;
+    
+}
+.picker-holder {
     background-color: rgba(0, 0, 0, 0.25);
 }
+.adder-holder {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color .5s ease;
+}
 
-.picker-frame {
+.picker-frame, .adder-frame {
     width: 75px;
     height: 75px;
+}
+.picker-frame {
+    cursor: pointer;
     border-radius: 25%;
     transition: border-radius .5s ease;
 }
 
 .picker-frame:hover {
     border-radius: 100%;
+}
+
+.adder-holder:hover {
+    background-color: rgba(0, 0, 0, 0.75);
 }
