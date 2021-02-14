@@ -4,7 +4,8 @@ import App from './App';
 
 ReactDOM.render(
   <>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <App />
   </>,
-  document.getElementById('root')
+  document.getElementsByTagName("body")[0]
 );

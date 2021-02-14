@@ -1,6 +1,10 @@
 const Picker = params => {
+    const color = params.color;
     return (
-        <p>{params.color}</p>
+        <div className="picker-holder">
+            <div className="picker-frame" style={{backgroundColor:color}} onClick={() => params.onClick(color)}></div>
+            <p>{color}</p>
+        </div>
     )
 }
 
