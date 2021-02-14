@@ -3,18 +3,23 @@ body {
     padding: 0;
 }
 
-#root {
+#picker-root {
     min-height: 100vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /* Picker */
 .picker-holder {
     text-align: center;
     padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .picker-frame {
@@ -24,6 +29,6 @@ body {
     transition: border-radius .5s ease;
 }
 
-.frame:hover {
+.picker-frame:hover {
     border-radius: 100%;
 }
